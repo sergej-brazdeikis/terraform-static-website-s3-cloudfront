@@ -3,10 +3,8 @@
 
 ### Prerequisites
 
-Need to have:
-
-* installed [Terraform](https://www.terraform.io)
-* AWS Account. This account need to have enough permissions to setup the infrastructure
+* Installed [Terraform](https://www.terraform.io)
+* AWS Account. This account needs to have enough permissions to setup the infrastructure
   * AWS Access Key ID
   * AWS Secret Access Key
 
