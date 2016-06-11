@@ -9,7 +9,7 @@ Need to have:
 * AWS Account. This account need to have enough permissions to setup the infrastructure
   * AWS Access Key ID
   * AWS Secret Access Key
-  
+
 ### Setup
 
 * `cp secret.tfvars_template secret.tfvars`
