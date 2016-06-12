@@ -1,5 +1,11 @@
-
 ## Terraform template to provision website on AWS S3 with Cloudfront and Route53
+
+[![CircleCI](https://circleci.com/gh/sjevs/terraform-static-website-s3-cloudfront.svg?style=svg)](https://circleci.com/gh/sjevs/terraform-static-website-s3-cloudfront)
+
+### Features
+
+* No coding needed, just set your domain in the configuration
+* Covered with [integration test](circle.yml) against AWS. So it is stable and functioning
 
 ### Prerequisites
 
