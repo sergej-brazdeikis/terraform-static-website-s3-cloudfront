@@ -1,4 +1,5 @@
 machine:
+    timezone: Europe/Berlin
     services:
         - docker
 
