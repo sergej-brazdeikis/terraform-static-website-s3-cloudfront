@@ -4,14 +4,14 @@ machine:
 
 dependencies:
   override:
-  - echo 'aws_access_key_id = "'$AWS_ACCESS_KEY_ID'"' > secret.tfvars
-  - echo 'aws_secret_key = "'$AWS_SECRET_ACCESS_KEY'"' >> secret.tfvars
+    - echo 'aws_access_key_id = "'$AWS_ACCESS_KEY_ID'"' > secret.tfvars
+    - echo 'aws_secret_key = "'$AWS_SECRET_ACCESS_KEY'"' >> secret.tfvars
 
-  - echo 'domain = "circle-build-'$CIRCLE_BUILD_NUM'.io"' > website.tfvars
-  - echo 'domainAlias = "circle-build-'$CIRCLE_BUILD_NUM'_io"' >> website.tfvars
-  - echo 'subdomain = "www.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
-  - echo 'subdomainAlias = "www_circle-build-'$CIRCLE_BUILD_NUM'_io"' >> website.tfvars
-  - echo 'cdnSubDomain = "cdn.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
+    - echo 'domain = "circle-build-'$CIRCLE_BUILD_NUM'.io"' > website.tfvars
+    - echo 'domainAlias = "circle-build-'$CIRCLE_BUILD_NUM'_io"' >> website.tfvars
+    - echo 'subdomain = "www.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
+    - echo 'subdomainAlias = "www_circle-build-'$CIRCLE_BUILD_NUM'_io"' >> website.tfvars
+    - echo 'cdnSubDomain = "cdn.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
 
 test:
   override:
