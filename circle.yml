@@ -1,10 +1,10 @@
 machine:
-  services:
-    - docker
+    services:
+        - docker
 
 dependencies:
-  override:
-    - echo "Debugging CircleCI"
+    override:
+        - echo "Debugging CircleCI"
     # - echo 'aws_access_key_id = "'$AWS_ACCESS_KEY_ID'"' > secret.tfvars
     # - echo 'aws_secret_key = "'$AWS_SECRET_ACCESS_KEY'"' >> secret.tfvars
 
@@ -15,8 +15,8 @@ dependencies:
     # - echo 'cdnSubDomain = "cdn.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
 
 test:
-  override:
-    - false
+    override:
+        - false
     # - docker run -it -v $PWD:/src sjevs/terraform plan -var-file website.tfvars  -var-file secret.tfvars
     # - docker run -it -v $PWD:/src sjevs/terraform apply -var-file website.tfvars  -var-file secret.tfvars
     # - docker run -it -v $PWD:/src sjevs/terraform destroy -var-file website.tfvars  -var-file secret.tfvars
