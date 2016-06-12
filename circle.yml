@@ -15,5 +15,6 @@ dependencies:
 
 test:
   override:
-    - exit 1
     - docker run -it -v $PWD:/src sjevs/terraform plan -var-file website.tfvars  -var-file secret.tfvars
+    - docker run -it -v $PWD:/src sjevs/terraform apply -var-file website.tfvars  -var-file secret.tfvars
+    - docker run -it -v $PWD:/src sjevs/terraform destroy -var-file website.tfvars  -var-file secret.tfvars
