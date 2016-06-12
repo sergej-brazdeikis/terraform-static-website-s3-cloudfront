@@ -10,10 +10,9 @@
 
 ### Setup
 
-* `cp secret.tfvars_template secret.tfvars`
-* Edit `secret.tfvars`, to put your AWS keys there.
-* Edit `website.tfvars`, put your website domain there
-* And provision
+* `cp secret.tfvars_template secret.tfvars`. Edit `secret.tfvars`, to put your AWS keys there.
+* `cp website.tfvars_template website.tfvars`. Edit `website.tfvars`, put your website domain there
+* Provision
 ```
 terraform apply -var-file website.tfvars  -var-file secret.tfvars
 ```
