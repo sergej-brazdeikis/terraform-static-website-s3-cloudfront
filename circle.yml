@@ -16,4 +16,3 @@ dependencies:
 test:
   override:
     - false
-    - docker run -it -v $PWD:/src sjevs/terraform plan -var-file website.tfvars  -var-file secret.tfvars
