@@ -14,7 +14,8 @@ dependencies:
   - echo 'cdnSubDomain = "cdn.circle-build-'$CIRCLE_BUILD_NUM'.io"' >> website.tfvars
 
 test:
-  - false
-  - docker run -it -v $PWD:/src sjevs/terraform plan -var-file website.tfvars  -var-file secret.tfvars
-  - docker run -it -v $PWD:/src sjevs/terraform apply -var-file website.tfvars  -var-file secret.tfvars
-  - docker run -it -v $PWD:/src sjevs/terraform destroy -var-file website.tfvars  -var-file secret.tfvars
+  override:
+    - false
+    - docker run -it -v $PWD:/src sjevs/terraform plan -var-file website.tfvars  -var-file secret.tfvars
+    - docker run -it -v $PWD:/src sjevs/terraform apply -var-file website.tfvars  -var-file secret.tfvars
+    - docker run -it -v $PWD:/src sjevs/terraform destroy -var-file website.tfvars  -var-file secret.tfvars
