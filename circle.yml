@@ -1,12 +1,11 @@
 machine:
-    timezone: Europe/Berlin
-    services:
-        - docker
+  services:
+    - docker
 
 dependencies:
-    override:
-        - true
+  override:
+    - docker info
 
 test:
-    override:
-        - true
+  override:
+    - true
